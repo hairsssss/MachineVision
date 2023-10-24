@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34031.279
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "编程规范", "编程规范.csproj", "{AC14632E-C96E-4D03-A208-221EBAEEEFB6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "位运算符", "..\位运算符\位运算符.csproj", "{4F38190B-E938-4CA3-8F5B-0743639802E2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AC14632E-C96E-4D03-A208-221EBAEEEFB6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AC14632E-C96E-4D03-A208-221EBAEEEFB6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AC14632E-C96E-4D03-A208-221EBAEEEFB6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AC14632E-C96E-4D03-A208-221EBAEEEFB6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4F38190B-E938-4CA3-8F5B-0743639802E2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4F38190B-E938-4CA3-8F5B-0743639802E2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4F38190B-E938-4CA3-8F5B-0743639802E2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4F38190B-E938-4CA3-8F5B-0743639802E2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B892C65B-6E8B-461D-A040-DCC79037CDE2}
+	EndGlobalSection
+EndGlobal

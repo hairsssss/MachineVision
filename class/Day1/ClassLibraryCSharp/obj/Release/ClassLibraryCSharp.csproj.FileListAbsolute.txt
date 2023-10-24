@@ -1,0 +1,6 @@
+C:\Users\renre\Desktop\C#226_8\ZhiYou_226_8_Day1_1\ClassLibraryCSharp\bin\Release\ClassLibraryCSharp.dll
+C:\Users\renre\Desktop\C#226_8\ZhiYou_226_8_Day1_1\ClassLibraryCSharp\bin\Release\ClassLibraryCSharp.pdb
+C:\Users\renre\Desktop\C#226_8\ZhiYou_226_8_Day1_1\ClassLibraryCSharp\obj\Release\ClassLibraryCSharp.csproj.AssemblyReference.cache
+C:\Users\renre\Desktop\C#226_8\ZhiYou_226_8_Day1_1\ClassLibraryCSharp\obj\Release\ClassLibraryCSharp.csproj.CoreCompileInputs.cache
+C:\Users\renre\Desktop\C#226_8\ZhiYou_226_8_Day1_1\ClassLibraryCSharp\obj\Release\ClassLibraryCSharp.dll
+C:\Users\renre\Desktop\C#226_8\ZhiYou_226_8_Day1_1\ClassLibraryCSharp\obj\Release\ClassLibraryCSharp.pdb

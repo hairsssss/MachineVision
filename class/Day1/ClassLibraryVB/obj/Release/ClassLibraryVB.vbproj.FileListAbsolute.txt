@@ -1,0 +1,10 @@
+C:\Users\renre\Desktop\C#226_8\ZhiYou_226_8_Day1_1\ClassLibraryVB\bin\Release\ClassLibraryVB.dll
+C:\Users\renre\Desktop\C#226_8\ZhiYou_226_8_Day1_1\ClassLibraryVB\bin\Release\ClassLibraryVB.pdb
+C:\Users\renre\Desktop\C#226_8\ZhiYou_226_8_Day1_1\ClassLibraryVB\bin\Release\ClassLibraryVB.xml
+C:\Users\renre\Desktop\C#226_8\ZhiYou_226_8_Day1_1\ClassLibraryVB\obj\Release\ClassLibraryVB.vbproj.AssemblyReference.cache
+C:\Users\renre\Desktop\C#226_8\ZhiYou_226_8_Day1_1\ClassLibraryVB\obj\Release\ClassLibraryVB.Resources.resources
+C:\Users\renre\Desktop\C#226_8\ZhiYou_226_8_Day1_1\ClassLibraryVB\obj\Release\ClassLibraryVB.vbproj.GenerateResource.cache
+C:\Users\renre\Desktop\C#226_8\ZhiYou_226_8_Day1_1\ClassLibraryVB\obj\Release\ClassLibraryVB.vbproj.CoreCompileInputs.cache
+C:\Users\renre\Desktop\C#226_8\ZhiYou_226_8_Day1_1\ClassLibraryVB\obj\Release\ClassLibraryVB.dll
+C:\Users\renre\Desktop\C#226_8\ZhiYou_226_8_Day1_1\ClassLibraryVB\obj\Release\ClassLibraryVB.xml
+C:\Users\renre\Desktop\C#226_8\ZhiYou_226_8_Day1_1\ClassLibraryVB\obj\Release\ClassLibraryVB.pdb

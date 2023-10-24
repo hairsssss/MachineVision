@@ -1,0 +1,54 @@
+类（Class）
+对象（Object）
+方法（Method）
+属性（Property）
+变量（Variable）
+参数（Parameter）
+数组（Array）
+字符串（String）
+整数（Integer）
+浮点数（Float）
+布尔值（Boolean）
+条件语句（Conditional statement）
+循环语句（Loop statement）
+控制流程（Control flow）
+操作符（Operator）
+初始化（Initialization）
+继承（Inheritance）
+多态（Polymorphism）
+接口（Interface）
+异常处理（Exception handling）
+文件操作（File manipulation）
+数据库连接（Database connection）
+网络通信（Network communication）
+图形用户界面（Graphical user interface）
+事件处理（Event handling）
+线程（Thread）
+并发（Concurrency）
+集合（Collection）
+泛型（Generic）
+LINQ（Language-Integrated Query）
+数据类型（Data type）
+委托（Delegate）
+lambda 表达式（Lambda expression）
+特性（Attribute）
+创建（Instantiate）
+销毁（Dispose）
+静态（Static）
+可空类型（Nullable type）
+接口实现（Interface implementation）
+构造函数（Constructor）
+执行（Execute）
+调试（Debug）
+引用（Reference）
+值类型（Value type）
+操作数（Operand）
+命名空间（Namespace）
+组件（Component）
+索引器（Indexer）
+断言（Assertion）
+代理（Delegate）
+
+
+
+https://chat7.aichatos.xyz/

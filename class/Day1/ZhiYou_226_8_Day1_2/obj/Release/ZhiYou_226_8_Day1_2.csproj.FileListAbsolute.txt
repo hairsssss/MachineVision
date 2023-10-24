@@ -1,0 +1,11 @@
+C:\Users\renre\Desktop\C#226_8\ZhiYou_226_8_Day1_1\ZhiYou_226_8_Day1_2\bin\Release\ZhiYou_226_8_Day1_2.exe.config
+C:\Users\renre\Desktop\C#226_8\ZhiYou_226_8_Day1_1\ZhiYou_226_8_Day1_2\bin\Release\ZhiYou_226_8_Day1_2.exe
+C:\Users\renre\Desktop\C#226_8\ZhiYou_226_8_Day1_1\ZhiYou_226_8_Day1_2\bin\Release\ZhiYou_226_8_Day1_2.pdb
+C:\Users\renre\Desktop\C#226_8\ZhiYou_226_8_Day1_1\ZhiYou_226_8_Day1_2\obj\Release\ZhiYou_226_8_Day1_2.csproj.AssemblyReference.cache
+C:\Users\renre\Desktop\C#226_8\ZhiYou_226_8_Day1_1\ZhiYou_226_8_Day1_2\obj\Release\ZhiYou_226_8_Day1_2.csproj.SuggestedBindingRedirects.cache
+C:\Users\renre\Desktop\C#226_8\ZhiYou_226_8_Day1_1\ZhiYou_226_8_Day1_2\obj\Release\ZhiYou_226_8_Day1_2.csproj.CoreCompileInputs.cache
+C:\Users\renre\Desktop\C#226_8\ZhiYou_226_8_Day1_1\ZhiYou_226_8_Day1_2\obj\Release\ZhiYou_226_8_Day1_2.exe
+C:\Users\renre\Desktop\C#226_8\ZhiYou_226_8_Day1_1\ZhiYou_226_8_Day1_2\obj\Release\ZhiYou_226_8_Day1_2.pdb
+C:\Users\renre\Desktop\C#226_8\ZhiYou_226_8_Day1_1\ZhiYou_226_8_Day1_2\bin\Release\ClassLibrary1.dll
+C:\Users\renre\Desktop\C#226_8\ZhiYou_226_8_Day1_1\ZhiYou_226_8_Day1_2\bin\Release\ClassLibrary1.pdb
+C:\Users\renre\Desktop\C#226_8\ZhiYou_226_8_Day1_1\ZhiYou_226_8_Day1_2\obj\Release\ZhiYou_226_8_Day1_2.csproj.CopyComplete

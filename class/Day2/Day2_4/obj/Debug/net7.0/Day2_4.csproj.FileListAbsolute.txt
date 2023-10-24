@@ -1,0 +1,14 @@
+D:\A_material\MachineVision\class\Day2_1\Day2_4\bin\Debug\net7.0\Day2_4.exe
+D:\A_material\MachineVision\class\Day2_1\Day2_4\bin\Debug\net7.0\Day2_4.deps.json
+D:\A_material\MachineVision\class\Day2_1\Day2_4\bin\Debug\net7.0\Day2_4.runtimeconfig.json
+D:\A_material\MachineVision\class\Day2_1\Day2_4\bin\Debug\net7.0\Day2_4.dll
+D:\A_material\MachineVision\class\Day2_1\Day2_4\bin\Debug\net7.0\Day2_4.pdb
+D:\A_material\MachineVision\class\Day2_1\Day2_4\obj\Debug\net7.0\Day2_4.GeneratedMSBuildEditorConfig.editorconfig
+D:\A_material\MachineVision\class\Day2_1\Day2_4\obj\Debug\net7.0\Day2_4.AssemblyInfoInputs.cache
+D:\A_material\MachineVision\class\Day2_1\Day2_4\obj\Debug\net7.0\Day2_4.AssemblyInfo.cs
+D:\A_material\MachineVision\class\Day2_1\Day2_4\obj\Debug\net7.0\Day2_4.csproj.CoreCompileInputs.cache
+D:\A_material\MachineVision\class\Day2_1\Day2_4\obj\Debug\net7.0\Day2_4.dll
+D:\A_material\MachineVision\class\Day2_1\Day2_4\obj\Debug\net7.0\refint\Day2_4.dll
+D:\A_material\MachineVision\class\Day2_1\Day2_4\obj\Debug\net7.0\Day2_4.pdb
+D:\A_material\MachineVision\class\Day2_1\Day2_4\obj\Debug\net7.0\Day2_4.genruntimeconfig.cache
+D:\A_material\MachineVision\class\Day2_1\Day2_4\obj\Debug\net7.0\ref\Day2_4.dll

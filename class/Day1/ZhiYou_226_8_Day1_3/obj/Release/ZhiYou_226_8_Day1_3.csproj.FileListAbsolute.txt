@@ -1,0 +1,14 @@
+C:\Users\renre\Desktop\C#226_8\ZhiYou_226_8_Day1_1\ZhiYou_226_8_Day1_3\bin\Release\ZhiYou_226_8_Day1_3.exe.config
+C:\Users\renre\Desktop\C#226_8\ZhiYou_226_8_Day1_1\ZhiYou_226_8_Day1_3\bin\Release\ZhiYou_226_8_Day1_3.exe
+C:\Users\renre\Desktop\C#226_8\ZhiYou_226_8_Day1_1\ZhiYou_226_8_Day1_3\bin\Release\ZhiYou_226_8_Day1_3.pdb
+C:\Users\renre\Desktop\C#226_8\ZhiYou_226_8_Day1_1\ZhiYou_226_8_Day1_3\bin\Release\ClassLibraryCSharp.dll
+C:\Users\renre\Desktop\C#226_8\ZhiYou_226_8_Day1_1\ZhiYou_226_8_Day1_3\bin\Release\ClassLibraryVB.dll
+C:\Users\renre\Desktop\C#226_8\ZhiYou_226_8_Day1_1\ZhiYou_226_8_Day1_3\bin\Release\ClassLibraryCSharp.pdb
+C:\Users\renre\Desktop\C#226_8\ZhiYou_226_8_Day1_1\ZhiYou_226_8_Day1_3\bin\Release\ClassLibraryVB.pdb
+C:\Users\renre\Desktop\C#226_8\ZhiYou_226_8_Day1_1\ZhiYou_226_8_Day1_3\bin\Release\ClassLibraryVB.xml
+C:\Users\renre\Desktop\C#226_8\ZhiYou_226_8_Day1_1\ZhiYou_226_8_Day1_3\obj\Release\ZhiYou_226_8_Day1_3.csproj.AssemblyReference.cache
+C:\Users\renre\Desktop\C#226_8\ZhiYou_226_8_Day1_1\ZhiYou_226_8_Day1_3\obj\Release\ZhiYou_226_8_Day1_3.csproj.SuggestedBindingRedirects.cache
+C:\Users\renre\Desktop\C#226_8\ZhiYou_226_8_Day1_1\ZhiYou_226_8_Day1_3\obj\Release\ZhiYou_226_8_Day1_3.csproj.CoreCompileInputs.cache
+C:\Users\renre\Desktop\C#226_8\ZhiYou_226_8_Day1_1\ZhiYou_226_8_Day1_3\obj\Release\ZhiYou_226_8_Day1_3.csproj.CopyComplete
+C:\Users\renre\Desktop\C#226_8\ZhiYou_226_8_Day1_1\ZhiYou_226_8_Day1_3\obj\Release\ZhiYou_226_8_Day1_3.exe
+C:\Users\renre\Desktop\C#226_8\ZhiYou_226_8_Day1_1\ZhiYou_226_8_Day1_3\obj\Release\ZhiYou_226_8_Day1_3.pdb

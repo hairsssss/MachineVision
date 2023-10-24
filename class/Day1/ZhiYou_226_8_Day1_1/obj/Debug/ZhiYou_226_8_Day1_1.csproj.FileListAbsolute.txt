@@ -1,0 +1,8 @@
+C:\Users\renre\Desktop\C#226_8\ZhiYou_226_8_Day1_1\ZhiYou_226_8_Day1_1\bin\Debug\ZhiYou_226_8_Day1_1.exe.config
+C:\Users\renre\Desktop\C#226_8\ZhiYou_226_8_Day1_1\ZhiYou_226_8_Day1_1\bin\Debug\ZhiYou_226_8_Day1_1.exe
+C:\Users\renre\Desktop\C#226_8\ZhiYou_226_8_Day1_1\ZhiYou_226_8_Day1_1\bin\Debug\ZhiYou_226_8_Day1_1.pdb
+C:\Users\renre\Desktop\C#226_8\ZhiYou_226_8_Day1_1\ZhiYou_226_8_Day1_1\obj\Debug\ZhiYou_226_8_Day1_1.csproj.AssemblyReference.cache
+C:\Users\renre\Desktop\C#226_8\ZhiYou_226_8_Day1_1\ZhiYou_226_8_Day1_1\obj\Debug\ZhiYou_226_8_Day1_1.csproj.SuggestedBindingRedirects.cache
+C:\Users\renre\Desktop\C#226_8\ZhiYou_226_8_Day1_1\ZhiYou_226_8_Day1_1\obj\Debug\ZhiYou_226_8_Day1_1.csproj.CoreCompileInputs.cache
+C:\Users\renre\Desktop\C#226_8\ZhiYou_226_8_Day1_1\ZhiYou_226_8_Day1_1\obj\Debug\ZhiYou_226_8_Day1_1.exe
+C:\Users\renre\Desktop\C#226_8\ZhiYou_226_8_Day1_1\ZhiYou_226_8_Day1_1\obj\Debug\ZhiYou_226_8_Day1_1.pdb

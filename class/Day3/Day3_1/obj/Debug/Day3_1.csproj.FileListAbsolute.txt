@@ -1,0 +1,7 @@
+D:\A_material\MachineVision\class\Day3\Day3_1\bin\Debug\Day3_1.exe.config
+D:\A_material\MachineVision\class\Day3\Day3_1\bin\Debug\Day3_1.exe
+D:\A_material\MachineVision\class\Day3\Day3_1\bin\Debug\Day3_1.pdb
+D:\A_material\MachineVision\class\Day3\Day3_1\obj\Debug\Day3_1.csproj.AssemblyReference.cache
+D:\A_material\MachineVision\class\Day3\Day3_1\obj\Debug\Day3_1.csproj.CoreCompileInputs.cache
+D:\A_material\MachineVision\class\Day3\Day3_1\obj\Debug\Day3_1.exe
+D:\A_material\MachineVision\class\Day3\Day3_1\obj\Debug\Day3_1.pdb

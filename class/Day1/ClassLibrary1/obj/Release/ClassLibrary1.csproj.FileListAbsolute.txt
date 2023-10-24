@@ -1,0 +1,6 @@
+C:\Users\renre\Desktop\C#226_8\ZhiYou_226_8_Day1_1\ClassLibrary1\bin\Release\ClassLibrary1.dll
+C:\Users\renre\Desktop\C#226_8\ZhiYou_226_8_Day1_1\ClassLibrary1\bin\Release\ClassLibrary1.pdb
+C:\Users\renre\Desktop\C#226_8\ZhiYou_226_8_Day1_1\ClassLibrary1\obj\Release\ClassLibrary1.csproj.AssemblyReference.cache
+C:\Users\renre\Desktop\C#226_8\ZhiYou_226_8_Day1_1\ClassLibrary1\obj\Release\ClassLibrary1.csproj.CoreCompileInputs.cache
+C:\Users\renre\Desktop\C#226_8\ZhiYou_226_8_Day1_1\ClassLibrary1\obj\Release\ClassLibrary1.dll
+C:\Users\renre\Desktop\C#226_8\ZhiYou_226_8_Day1_1\ClassLibrary1\obj\Release\ClassLibrary1.pdb
