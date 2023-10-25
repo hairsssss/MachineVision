@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // 有关程序集的一般信息由以下
 // 控制。更改这些特性值可修改
 // 与程序集关联的信息。
-[assembly: AssemblyTitle("Day6_1")]
+[assembly: AssemblyTitle("Day6_2")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("Day6_1")]
+[assembly: AssemblyProduct("Day6_2")]
 [assembly: AssemblyCopyright("Copyright ©  2023")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // 如果此项目向 COM 公开，则下列 GUID 用于类型库的 ID
-[assembly: Guid("7644ceb6-629b-4a1e-b4cf-18fe4b24a696")]
+[assembly: Guid("ac688855-0d14-4f18-bee5-d93eba3b6f26")]
 
 // 程序集的版本信息由下列四个值组成: 
 //
