@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{7644CEB6-629B-4A1E-B4CF-18FE4B24A696}</ProjectGuid>
+    <ProjectGuid>{7CB19A3D-5A1A-4D41-A80E-9BFF1AB66079}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Day6_1</RootNamespace>
-    <AssemblyName>Day6_1</AssemblyName>
+    <RootNamespace>work_10._25</RootNamespace>
+    <AssemblyName>work_10.25</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,18 +43,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\ClassLibrary1_6_1\ClassLibrary1_6_1.csproj">
-      <Project>{e64dc49f-2fcd-467b-8524-a3401627822d}</Project>
-      <Name>ClassLibrary1_6_1</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

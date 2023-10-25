@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace ZhiYou_228_6_Day6_2 {
+namespace Day6_2 {
     internal class Program {
         static void Main(string[] args) {
 
