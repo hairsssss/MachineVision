@@ -115,40 +115,40 @@ namespace work_10._24 {
              }*/
 
             //do while
-            /* int scoreDo = 0;
-             bool exit = false;
-             do {
-                 Console.Write("请输入第一个数字：");
-                 string strInputDo1 = Console.ReadLine();
+            /*int scoreDo = 0;
+            bool exit = false;
+            do {
+                Console.Write("请输入第一个数字：");
+                string strInputDo1 = Console.ReadLine();
 
-                 Console.Write("请输入第二个数字：");
-                 string strInputDo2 = Console.ReadLine();
+                Console.Write("请输入第二个数字：");
+                string strInputDo2 = Console.ReadLine();
 
-                 if (int.TryParse(strInputDo1, out int num1)) {
-                     if (int.TryParse(strInputDo2, out int num2)) {
+                if (int.TryParse(strInputDo1, out int num1)) {
+                    if (int.TryParse(strInputDo2, out int num2)) {
 
-                         if (num1 + num2 > 100) {
-                             scoreDo += 1;
-                         } else {
-                             scoreDo -= 1;
-                         }
+                        if (num1 + num2 > 100) {
+                            scoreDo += 1;
+                        } else {
+                            scoreDo -= 1;
+                        }
 
-                     } else {
-                         Console.Write("输入格式错误请重新输入：");
-                     }
+                    } else {
+                        Console.Write("输入格式错误请重新输入：");
+                    }
 
-                 } else {
-                     Console.Write("输入格式错误请重新输入：");
-                 }
+                } else {
+                    Console.Write("输入格式错误请重新输入：");
+                }
 
-                 if (scoreDo < -10 || scoreDo > 10) {
-                     Console.WriteLine(scoreDo);
-                     exit = true;
-                 }
+                if (scoreDo < -10 || scoreDo > 10) {
+                    Console.WriteLine(scoreDo);
+                    exit = true;
+                }
 
-                 Console.WriteLine($"scoreDo------{scoreDo}");
-                 Console.WriteLine($"exit------{exit}");
-             } while (!exit);*/
+                Console.WriteLine($"scoreDo------{scoreDo}");
+                Console.WriteLine($"exit------{exit}");
+            } while (!exit);*/
 
             //goto  
             /*  int scoreGoto = 0;
@@ -284,7 +284,7 @@ namespace work_10._24 {
             }*/
 
             //使用goto语句跳出多层嵌套循环。
-            for (int i = 1; i <= 3; i++) {
+            /*for (int i = 1; i <= 3; i++) {
                 for (int j = 1; j <= 3; j++) {
                     Console.WriteLine($"i = {i}, j = {j}");
 
@@ -296,7 +296,7 @@ namespace work_10._24 {
             }
 
         end:
-            Console.WriteLine("程序结束");
+            Console.WriteLine("程序结束");*/
 
         }
     }
