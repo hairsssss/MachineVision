@@ -5,12 +5,12 @@ namespace Day8_4 {
         static void Main(string[] args) {
 
             /*
-            可变参数params （讲完数组再说）
-            1.params是ParamArrayAttribute（参数数组属性）的缩写
-            2.param解决了C#中不定长参数的传递的问题
-            3.params参数必须定义在参数列表最后面。
-            4.params必须是一维数组
-            5.params只能在一个方法中 定义一个一维数组 
+             * 可变参数params （讲完数组再说）
+             * 1.params是ParamArrayAttribute（参数数组属性）的缩写
+             * 2.param解决了C#中不定长参数的传递的问题
+             * 3.params参数必须定义在参数列表最后面。
+             * 4.params必须是一维数组
+             * 5.params只能在一个方法中 定义一个一维数组 
              */
 
             ProgramMothod(10, 20);
