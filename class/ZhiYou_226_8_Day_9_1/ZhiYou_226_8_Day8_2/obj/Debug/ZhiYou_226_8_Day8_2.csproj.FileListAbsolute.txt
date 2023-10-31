@@ -1,8 +1,0 @@
-C:\Users\renre\Desktop\C#226_8\ZhiYou_226_8_Day_8_1\ZhiYou_226_8_Day8_2\bin\Debug\ZhiYou_226_8_Day8_2.exe.config
-C:\Users\renre\Desktop\C#226_8\ZhiYou_226_8_Day_8_1\ZhiYou_226_8_Day8_2\bin\Debug\ZhiYou_226_8_Day8_2.exe
-C:\Users\renre\Desktop\C#226_8\ZhiYou_226_8_Day_8_1\ZhiYou_226_8_Day8_2\bin\Debug\ZhiYou_226_8_Day8_2.pdb
-C:\Users\renre\Desktop\C#226_8\ZhiYou_226_8_Day_8_1\ZhiYou_226_8_Day8_2\obj\Debug\ZhiYou_226_8_Day8_2.csproj.AssemblyReference.cache
-C:\Users\renre\Desktop\C#226_8\ZhiYou_226_8_Day_8_1\ZhiYou_226_8_Day8_2\obj\Debug\ZhiYou_226_8_Day8_2.csproj.SuggestedBindingRedirects.cache
-C:\Users\renre\Desktop\C#226_8\ZhiYou_226_8_Day_8_1\ZhiYou_226_8_Day8_2\obj\Debug\ZhiYou_226_8_Day8_2.csproj.CoreCompileInputs.cache
-C:\Users\renre\Desktop\C#226_8\ZhiYou_226_8_Day_8_1\ZhiYou_226_8_Day8_2\obj\Debug\ZhiYou_226_8_Day8_2.exe
-C:\Users\renre\Desktop\C#226_8\ZhiYou_226_8_Day_8_1\ZhiYou_226_8_Day8_2\obj\Debug\ZhiYou_226_8_Day8_2.pdb
