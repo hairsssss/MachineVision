@@ -147,6 +147,7 @@ namespace Day10_1 {
         public void PeopleMothod2() {
 
             Console.WriteLine(inta);
+            Console.WriteLine(1231313);
 
         }
 
