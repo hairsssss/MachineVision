@@ -75,8 +75,6 @@ namespace work_10_31 {
 
             Console.WriteLine($"总购买价格：{totalCost:C}");
             Console.WriteLine("谢谢惠顾！");*/
-
-
             //3
             Random random = new Random();
             Hero hero = new Hero(100);
