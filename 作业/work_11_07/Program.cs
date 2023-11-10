@@ -5,7 +5,20 @@ using System.IO;
 using System.Linq;
 namespace work_11_07 {
     internal class Program {
+        public class User {
+            public string UserName { get; set; }
+            public string Password { get; set; }
+        }
         static void Main(string[] args) {
+
+            List<User> users = new List<User> {
+                new User { UserName = "999", Password = "909090" },
+                new User { UserName = "111", Password = "90229090"}
+            };
+
+            foreach (User user in users) {
+                Console.WriteLine(user.UserName);
+            }
             #region 一 1.随机100个数字 然后使用ArrayList存储 （1）把最大的数字 输出（2）把元素从大到小排序 （3）算出所有数字的平均数
             Random random = new Random();
             ArrayList arrayList = new ArrayList();
@@ -221,8 +234,9 @@ namespace work_11_07 {
             #endregion
 
 
-
         }
+
+
         #region 二.登录注册功能  ArrayList 或者list<>    字典 版本 1.要求  注册 账号和密码 存储在对应的集合中 账号不能一样   密码 长度至少6位 2.登录成功后 提示登录成功 否则提示失败
 
         #endregion
