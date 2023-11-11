@@ -16,7 +16,16 @@ namespace Day17_1 {
 
         static void OnMouseSound() {
             Console.WriteLine("猫听到老鼠叫声，开始抓老鼠！");
-            // 触发猫抓老鼠的事件
+
+            // 模拟猫叫三次
+            for (int i = 0; i < 3; i++) {
+                MakeCatSound();
+            }
+        }
+
+        static void MakeCatSound() {
+            Console.WriteLine("猫叫了一声！");
+            // 触发猫叫的事件
             CatCatchMouseEvent?.Invoke();
         }
 
