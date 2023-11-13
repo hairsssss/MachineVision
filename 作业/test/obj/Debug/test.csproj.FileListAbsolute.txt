@@ -1,2 +1,0 @@
-D:\A_material\MachineVision\作业\test\obj\Debug\test.csproj.AssemblyReference.cache
-D:\A_material\MachineVision\作业\test\obj\Debug\test.csproj.CoreCompileInputs.cache

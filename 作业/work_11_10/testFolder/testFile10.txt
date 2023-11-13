@@ -1,2 +1,2 @@
 D:\A_material\MachineVision\作业\work_11_10\testFolder
-testFile61.txt
+testFile10.txt

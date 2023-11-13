@@ -38,23 +38,23 @@ namespace work_11_10 {
 
 
             #region 2.在指定位置创建文件夹 然后创建10个文件    然后再把10个文件删除  （提示 Directory）
-            /* // 使用 Directory 类的 GetCurrentDirectory 方法获取当前工作目录
-             string currentPath = Directory.GetCurrentDirectory();
-             // 使用 Directory 类的 GetParent 方法获取当前工作目录的父目录
-             DirectoryInfo parentPath = Directory.GetParent(currentPath);
-             // 使用 Directory 类的 GetParent 方法获取父目录的父目录，即解决方案路径
-             DirectoryInfo solutionPath = Directory.GetParent(parentPath.FullName);
+            // 使用 Directory 类的 GetCurrentDirectory 方法获取当前工作目录
+            string currentPath = Directory.GetCurrentDirectory();
+            // 使用 Directory 类的 GetParent 方法获取当前工作目录的父目录
+            DirectoryInfo parentPath = Directory.GetParent(currentPath);
+            // 使用 Directory 类的 GetParent 方法获取父目录的父目录，即解决方案路径
+            DirectoryInfo solutionPath = Directory.GetParent(parentPath.FullName);
 
-             //string folderPath = "D:\\A_material\\MachineVision\\作业\\work_11_10\\";
-             string folderPath = solutionPath.ToString() + "\\testFolder";
-             DirectoryAndFileHelper.CreatDirectory(folderPath.ToString());
+            //string folderPath = "D:\\A_material\\MachineVision\\作业\\work_11_10\\";
+            string folderPath = solutionPath.ToString() + "\\testFolder";
+            DirectoryAndFileHelper.CreatDirectory(folderPath.ToString());
 
-             DirectoryAndFileHelper.CreateFiles("testFile", 10);
-             Console.Write("是否删除刚创建的文件（Y/N）：");
-             string input = Console.ReadLine().ToUpper();
-             if (input == "Y") {
-                 DirectoryAndFileHelper.DeleteFiles();
-             }*/
+            DirectoryAndFileHelper.CreateFiles("testFile", 10);
+            Console.Write("是否删除刚创建的文件（Y/N）：");
+            string input = Console.ReadLine().ToUpper();
+            if (input == "Y") {
+                DirectoryAndFileHelper.DeleteFiles();
+            }
 
             #endregion
 
@@ -101,8 +101,8 @@ namespace work_11_10 {
             public static void CreateFiles(string fp, int fileCount) {
                 FilePath = fp;
                 FileCount = fileCount;
-                for (var i = 0; i < fileCount; i++) {
-                    string filePath = FolderPath + "\\" + fp + i + 1 + ".txt";
+                for (int i = 0; i < fileCount; i++) {
+                    string filePath = FolderPath + "\\" + fp + (i + 1) + ".txt";
                     if (!File.Exists(filePath)) {
 
                         using (FileStream file = File.Create(filePath)) {
