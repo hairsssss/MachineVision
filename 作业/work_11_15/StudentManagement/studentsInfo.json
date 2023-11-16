@@ -1,0 +1,51 @@
+[
+  {
+    "Name": "张三",
+    "Gender": "男",
+    "Age": 18,
+    "Height": 175,
+    "StudentId": "202311160001"
+  },
+  {
+    "Name": "李四",
+    "Gender": "女",
+    "Age": 20,
+    "Height": 165,
+    "StudentId": "202311160002"
+  },
+  {
+    "Name": "王五",
+    "Gender": "男",
+    "Age": 19,
+    "Height": 180,
+    "StudentId": "202311160003"
+  },
+  {
+    "Name": "赵六",
+    "Gender": "女",
+    "Age": 21,
+    "Height": 160,
+    "StudentId": "202311160004"
+  },
+  {
+    "Name": "钱七",
+    "Gender": "男",
+    "Age": 22,
+    "Height": 185,
+    "StudentId": "202311160005"
+  },
+  {
+    "Name": "孙八",
+    "Gender": "女",
+    "Age": 20,
+    "Height": 170,
+    "StudentId": "202311160006"
+  },
+  {
+    "Name": "周九",
+    "Gender": "男",
+    "Age": 24,
+    "Height": 188,
+    "StudentId": "202311160007"
+  }
+]
