@@ -10,7 +10,6 @@ using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Newtonsoft.Json; // 引入 Newtonsoft.Json 命名空间
-using static StudentManagement.ManagementPage;
 
 namespace StudentManagement {
     public partial class ManagementPage : Form {

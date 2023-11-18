@@ -1,0 +1,11 @@
+C:\Users\renre\Desktop\CSharp\winform1\zhiyou_winform_PictureBox\bin\Debug\zhiyou_winform_PictureBox.exe.config
+C:\Users\renre\Desktop\CSharp\winform1\zhiyou_winform_PictureBox\bin\Debug\zhiyou_winform_PictureBox.exe
+C:\Users\renre\Desktop\CSharp\winform1\zhiyou_winform_PictureBox\bin\Debug\zhiyou_winform_PictureBox.pdb
+C:\Users\renre\Desktop\CSharp\winform1\zhiyou_winform_PictureBox\obj\Debug\zhiyou_winform_PictureBox.csproj.AssemblyReference.cache
+C:\Users\renre\Desktop\CSharp\winform1\zhiyou_winform_PictureBox\obj\Debug\zhiyou_winform_PictureBox.csproj.SuggestedBindingRedirects.cache
+C:\Users\renre\Desktop\CSharp\winform1\zhiyou_winform_PictureBox\obj\Debug\zhiyou_winform_PictureBox.Form1.resources
+C:\Users\renre\Desktop\CSharp\winform1\zhiyou_winform_PictureBox\obj\Debug\zhiyou_winform_PictureBox.Properties.Resources.resources
+C:\Users\renre\Desktop\CSharp\winform1\zhiyou_winform_PictureBox\obj\Debug\zhiyou_winform_PictureBox.csproj.GenerateResource.cache
+C:\Users\renre\Desktop\CSharp\winform1\zhiyou_winform_PictureBox\obj\Debug\zhiyou_winform_PictureBox.csproj.CoreCompileInputs.cache
+C:\Users\renre\Desktop\CSharp\winform1\zhiyou_winform_PictureBox\obj\Debug\zhiyou_winform_PictureBox.exe
+C:\Users\renre\Desktop\CSharp\winform1\zhiyou_winform_PictureBox\obj\Debug\zhiyou_winform_PictureBox.pdb

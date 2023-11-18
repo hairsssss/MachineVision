@@ -1,0 +1,12 @@
+C:\Users\renre\Desktop\CSharp223\winform1\zhiyou_winform3ComBox4\bin\Debug\winfromComBox4.exe.config
+C:\Users\renre\Desktop\CSharp223\winform1\zhiyou_winform3ComBox4\bin\Debug\winfromComBox4.exe
+C:\Users\renre\Desktop\CSharp223\winform1\zhiyou_winform3ComBox4\bin\Debug\winfromComBox4.pdb
+C:\Users\renre\Desktop\CSharp223\winform1\zhiyou_winform3ComBox4\obj\Debug\zhiyou_winformComBox4.csproj.AssemblyReference.cache
+C:\Users\renre\Desktop\CSharp223\winform1\zhiyou_winform3ComBox4\obj\Debug\zhiyou_winformComBox4.csproj.SuggestedBindingRedirects.cache
+C:\Users\renre\Desktop\CSharp223\winform1\zhiyou_winform3ComBox4\obj\Debug\winfromComBox4.Form1.resources
+C:\Users\renre\Desktop\CSharp223\winform1\zhiyou_winform3ComBox4\obj\Debug\winfromComBox4.Properties.Resources.resources
+C:\Users\renre\Desktop\CSharp223\winform1\zhiyou_winform3ComBox4\obj\Debug\zhiyou_winformComBox4.csproj.GenerateResource.cache
+C:\Users\renre\Desktop\CSharp223\winform1\zhiyou_winform3ComBox4\obj\Debug\zhiyou_winformComBox4.csproj.CoreCompileInputs.cache
+C:\Users\renre\Desktop\CSharp223\winform1\zhiyou_winform3ComBox4\obj\Debug\winfromComBox4.exe
+C:\Users\renre\Desktop\CSharp223\winform1\zhiyou_winform3ComBox4\obj\Debug\winfromComBox4.pdb
+C:\Users\renre\Desktop\CSharp223\winform1\zhiyou_winform3ComBox4\obj\Debug\winfromComBox4.Form2.resources

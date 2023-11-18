@@ -9,6 +9,12 @@ public class JSONHelper {
 
     public static List<Student> students = new List<Student>();
 
+    //文本存放地址
+    public static string currentPath = Directory.GetCurrentDirectory();
+    public static DirectoryInfo parentPath = Directory.GetParent(currentPath);
+    public static DirectoryInfo solutionPath = Directory.GetParent(parentPath.FullName);
+    public static string _studentsInfoFilePath = solutionPath.ToString() + "\\studentsInfo.json";
+
     //新建JSON文件
     public static void createSmsJson() {
         if (!File.Exists(_studentsInfoFilePath)) {

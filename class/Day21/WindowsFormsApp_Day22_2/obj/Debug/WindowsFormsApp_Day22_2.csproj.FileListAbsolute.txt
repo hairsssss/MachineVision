@@ -1,0 +1,11 @@
+C:\Users\renre\Desktop\C#226_8\WindowsFormsApp_Day22_1\WindowsFormsApp_Day22_2\bin\Debug\WindowsFormsApp_Day22_2.exe.config
+C:\Users\renre\Desktop\C#226_8\WindowsFormsApp_Day22_1\WindowsFormsApp_Day22_2\bin\Debug\WindowsFormsApp_Day22_2.exe
+C:\Users\renre\Desktop\C#226_8\WindowsFormsApp_Day22_1\WindowsFormsApp_Day22_2\bin\Debug\WindowsFormsApp_Day22_2.pdb
+C:\Users\renre\Desktop\C#226_8\WindowsFormsApp_Day22_1\WindowsFormsApp_Day22_2\obj\Debug\WindowsFormsApp_Day22_2.csproj.AssemblyReference.cache
+C:\Users\renre\Desktop\C#226_8\WindowsFormsApp_Day22_1\WindowsFormsApp_Day22_2\obj\Debug\WindowsFormsApp_Day22_2.csproj.SuggestedBindingRedirects.cache
+C:\Users\renre\Desktop\C#226_8\WindowsFormsApp_Day22_1\WindowsFormsApp_Day22_2\obj\Debug\WindowsFormsApp_Day22_2.Form1.resources
+C:\Users\renre\Desktop\C#226_8\WindowsFormsApp_Day22_1\WindowsFormsApp_Day22_2\obj\Debug\WindowsFormsApp_Day22_2.Properties.Resources.resources
+C:\Users\renre\Desktop\C#226_8\WindowsFormsApp_Day22_1\WindowsFormsApp_Day22_2\obj\Debug\WindowsFormsApp_Day22_2.csproj.GenerateResource.cache
+C:\Users\renre\Desktop\C#226_8\WindowsFormsApp_Day22_1\WindowsFormsApp_Day22_2\obj\Debug\WindowsFormsApp_Day22_2.csproj.CoreCompileInputs.cache
+C:\Users\renre\Desktop\C#226_8\WindowsFormsApp_Day22_1\WindowsFormsApp_Day22_2\obj\Debug\WindowsFormsApp_Day22_2.exe
+C:\Users\renre\Desktop\C#226_8\WindowsFormsApp_Day22_1\WindowsFormsApp_Day22_2\obj\Debug\WindowsFormsApp_Day22_2.pdb

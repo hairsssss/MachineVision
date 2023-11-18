@@ -1,0 +1,11 @@
+C:\Users\renre\Desktop\CSharp\winform1\winform3\bin\Debug\winform3.exe.config
+C:\Users\renre\Desktop\CSharp\winform1\winform3\bin\Debug\winform3.exe
+C:\Users\renre\Desktop\CSharp\winform1\winform3\bin\Debug\winform3.pdb
+C:\Users\renre\Desktop\CSharp\winform1\winform3\obj\Debug\winform3.csproj.AssemblyReference.cache
+C:\Users\renre\Desktop\CSharp\winform1\winform3\obj\Debug\winform3.csproj.SuggestedBindingRedirects.cache
+C:\Users\renre\Desktop\CSharp\winform1\winform3\obj\Debug\winform3.Form1.resources
+C:\Users\renre\Desktop\CSharp\winform1\winform3\obj\Debug\winform3.Properties.Resources.resources
+C:\Users\renre\Desktop\CSharp\winform1\winform3\obj\Debug\winform3.csproj.GenerateResource.cache
+C:\Users\renre\Desktop\CSharp\winform1\winform3\obj\Debug\winform3.csproj.CoreCompileInputs.cache
+C:\Users\renre\Desktop\CSharp\winform1\winform3\obj\Debug\winform3.exe
+C:\Users\renre\Desktop\CSharp\winform1\winform3\obj\Debug\winform3.pdb
