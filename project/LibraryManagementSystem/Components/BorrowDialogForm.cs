@@ -7,16 +7,22 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using work_11_15;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.TaskbarClock;
 using static work_11_15.LoginRegister;
 
 namespace LibraryManagementSystem.Components {
     public partial class BorrowDialogForm : Form {
-        public BorrowDialogForm(string book) {
+        public BorrowDialogForm(string book, string username) {
+            BorrowerName = username;
             Book = book;
             InitializeComponent();
             dateTimePicker1.MinDate = DateTime.Today.AddDays(1);
         }
+
+        //借阅人
+        public static string BorrowerName { get; set; }
 
         //窗口初始化
         private void PageLoad(object sender, EventArgs e) {
@@ -24,8 +30,6 @@ namespace LibraryManagementSystem.Components {
             bookLabel.Text = Book;
         }
 
-        //借阅人
-        public static string BorrowerName { get; set; } = UserInfo.UserName;
         //预计归还时间
         public static DateTime EstimatedReturnTime { get; set; }
         public static string Book { get; set; }
@@ -34,7 +38,6 @@ namespace LibraryManagementSystem.Components {
         private void submitBtnClick(object sender, EventArgs e) {
             EstimatedReturnTime = dateTimePicker1.Value;
             this.DialogResult = DialogResult.OK;
-            Console.WriteLine(EstimatedReturnTime + "预计归还时间");
         }
 
         //取消

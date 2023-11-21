@@ -10,14 +10,16 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using LibraryManagementSystem.Components;
 using MySql.Data.MySqlClient;
+using work_11_15;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
 
 namespace LibraryManagementSystem {
     public partial class BooksPage : Form {
         private readonly SQLHelper sqlHelper;
-        public BooksPage() {
+        public BooksPage(string username) {
             InitializeComponent();
             sqlHelper = new SQLHelper();
+            UserName = username;
         }
 
         private void PageLoad(object sender, EventArgs e) {
@@ -27,6 +29,10 @@ namespace LibraryManagementSystem {
             LoadDataToDataGridView();
             CenterFormOnScreen();
         }
+
+        private string UserName { get; set; }
+
+
 
         private MySqlConnection connection;
 
@@ -58,8 +64,6 @@ namespace LibraryManagementSystem {
                 connection.Close();
             }
         }
-
-        //借阅
         //借阅
         private void borrowBtnClick(object sender, EventArgs e) {
             if (booksView.SelectedRows.Count > 0) {
@@ -77,7 +81,7 @@ namespace LibraryManagementSystem {
                     }
 
                     // 弹出对话框，要求填写借阅信息
-                    BorrowDialogForm borrowDialog = new BorrowDialogForm(book);
+                    BorrowDialogForm borrowDialog = new BorrowDialogForm(book, UserName);
                     DialogResult result = borrowDialog.ShowDialog();
 
                     if (result == DialogResult.OK) {
@@ -88,7 +92,7 @@ namespace LibraryManagementSystem {
                             connection.Open();
 
                             // 插入用户信息到数据库
-                            string insertQuery = $"INSERT INTO borrowed_book_list (borrower, book, book_id, borrowing_time, estimated_return_time, is_return) VALUES ('{borrower}', '{book}', '{book_id}', '{DateTime.Now}', '{estimated_return_time}','{0}')";
+                            string insertQuery = $"INSERT INTO borrowed_book_list (borrower, book, book_id, borrowing_time, estimated_return_time, is_return,count) VALUES ('{borrower}', '{book}', '{book_id}', '{DateTime.Now}', '{estimated_return_time}','{0}',1)";
 
                             using (MySqlCommand insertCommand = new MySqlCommand(insertQuery, connection)) {
                                 insertCommand.ExecuteNonQuery();
@@ -113,6 +117,74 @@ namespace LibraryManagementSystem {
                 MessageBox.Show("请先选中要借阅的书籍", "提示");
             }
         }
+        /*  //借阅
+          private void borrowBtnClick(object sender, EventArgs e) {
+              if (booksView.SelectedRows.Count > 0) {
+                  foreach (DataGridViewRow selectedRow in booksView.SelectedRows) {
+                      string id = selectedRow.Cells["ID"].Value.ToString();
+                      string book = selectedRow.Cells["book"].Value.ToString();
+                      string author = selectedRow.Cells["author"].Value.ToString();
+                      string book_id = selectedRow.Cells["ID"].Value.ToString();
+                      int count = Convert.ToInt32(selectedRow.Cells["count"].Value); // 假设你的 count 列名为 "count"
+
+                      // 检查书籍库存是否足够
+                      if (count <= 0) {
+                          MessageBox.Show($"书籍《{book}--{id}》库存不足，无法借阅", "提示");
+                          continue; // 继续处理下一本书籍
+                      }
+
+                      // 弹出对话框，要求填写借阅信息
+                      BorrowDialogForm borrowDialog = new BorrowDialogForm(book, UserName);
+                      DialogResult result = borrowDialog.ShowDialog();
+
+                      if (result == DialogResult.OK) {
+                          string borrower = BorrowDialogForm.BorrowerName;
+                          DateTime estimated_return_time = BorrowDialogForm.EstimatedReturnTime;
+
+                          using (MySqlConnection connection = new MySqlConnection(SQLHelper.connstr)) {
+                              connection.Open();
+
+                              // 查询是否已经借阅过相同的书籍
+                              string selectQuery = $"SELECT count FROM borrowed_book_list WHERE borrower = '{borrower}' AND book_id = '{book_id}'";
+                              using (MySqlCommand selectCommand = new MySqlCommand(selectQuery, connection)) {
+                                  object existingCount = selectCommand.ExecuteScalar();
+
+                                  if (existingCount != null) {
+                                      // 如果已经借阅过相同的书籍，则更新 count 字段
+                                      int newCount = Convert.ToInt32(existingCount) + 1;
+                                      string newQuery = $"UPDATE borrowed_book_list SET count = {newCount} WHERE borrower = '{borrower}' AND book_id = '{book_id}'";
+                                      using (MySqlCommand updateCommand = new MySqlCommand(newQuery, connection)) {
+                                          updateCommand.ExecuteNonQuery();
+                                      }
+                                  } else {
+                                      // 否则插入新的借阅记录
+                                      string insertQuery = $"INSERT INTO borrowed_book_list (borrower, book, book_id, borrowing_time, estimated_return_time, is_return, count) VALUES ('{borrower}', '{book}', '{book_id}', '{DateTime.Now}', '{estimated_return_time}','{0}', 1)";
+                                      using (MySqlCommand insertCommand = new MySqlCommand(insertQuery, connection)) {
+                                          insertCommand.ExecuteNonQuery();
+                                      }
+                                  }
+
+                                  // 更新书籍库存
+                                  string updateQuery = $"UPDATE book_list SET count = count - 1 WHERE ID = '{id}'";
+                                  using (MySqlCommand updateCommand = new MySqlCommand(updateQuery, connection)) {
+                                      updateCommand.ExecuteNonQuery();
+                                  }
+
+                                  MessageBox.Show($"书籍《{book}--{id}》借阅成功，预计归还日期：{estimated_return_time.ToShortDateString()}，借阅人：{borrower}", "借阅成功");
+                              }
+                          }
+                      } else {
+                          // 用户取消操作
+                      }
+                  }
+
+                  LoadDataToDataGridView();
+
+              } else {
+                  MessageBox.Show("请先选中要借阅的书籍", "提示");
+              }
+          }*/
+
 
         //设置窗口位置居中屏幕
         private void CenterFormOnScreen() {
@@ -131,8 +203,9 @@ namespace LibraryManagementSystem {
             this.Location = new Point(x, y);
         }
 
+        //打开书架
         private void bookshelfBtnClick(object sender, EventArgs e) {
-            StudentPage studentPage = new StudentPage();
+            StudentPage studentPage = new StudentPage(UserName);
             studentPage.Show();
         }
     }

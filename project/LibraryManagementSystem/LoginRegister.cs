@@ -23,6 +23,7 @@ namespace work_11_15 {
 
         //目前登录的用户信息
         public class UserInfo {
+            //private class UserInfo {
             //public static string UserName { get; set; } = "小红";
             //public static string Password { get; set; } = "999999";
             //public static string UserRole { get; set; } = "0";
@@ -38,7 +39,6 @@ namespace work_11_15 {
         //身份
         private static string UserRole { get; set; }
 
-
         // 登录
         private void loginClick(object sender, EventArgs e) {
             UserName = userNameIpt.Text;
@@ -53,7 +53,7 @@ namespace work_11_15 {
                 using (MySqlCommand command = new MySqlCommand(query, connection)) {
                     using (MySqlDataReader reader = command.ExecuteReader()) {
                         if (reader.HasRows && reader.Read()) {
-                            MessageBox.Show($"用户 {UserName} 登录成功。", "Success");
+                            //MessageBox.Show($"用户 {UserName} 登录成功。", "Success");
                             UserInfo.UserName = UserName;
                             UserInfo.Password = Password;
                             UserInfo.UserRole = reader["userRole"].ToString();
@@ -61,9 +61,10 @@ namespace work_11_15 {
                             //根据身份不同跳转不同界面
                             if (UserInfo.UserRole == "0") {
                                 // 学生
-                                BooksPage booksPage = new BooksPage();
+                                BooksPage booksPage = new BooksPage(UserName);
                                 this.Hide();
                                 booksPage.Show();
+
                             } else if (UserInfo.UserRole == "1") {
                                 //管理员
                                 ManagePage managePage = new ManagePage();
