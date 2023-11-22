@@ -7,7 +7,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using static work_11_15.LoginRegister;
 
 namespace LibraryManagementSystem.Components {
     public partial class ChooseIdentityForm : Form {

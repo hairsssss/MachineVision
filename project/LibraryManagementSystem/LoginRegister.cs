@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -11,27 +12,27 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using LibraryManagementSystem;
 using LibraryManagementSystem.Components;
+using LibraryManagementSystem.Tools;
 using MySql.Data.MySqlClient;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
-namespace work_11_15 {
+using static LibraryManagementSystem.Tools.DataBase;
+
+namespace LibraryManagementSystem {
     public partial class LoginRegister : Form {
         private readonly SQLHelper sqlHelper;
         public LoginRegister() {
             InitializeComponent();
             sqlHelper = new SQLHelper();
-        }
 
+        }
         //目前登录的用户信息
-        public class UserInfo {
-            //private class UserInfo {
-            //public static string UserName { get; set; } = "小红";
-            //public static string Password { get; set; } = "999999";
-            //public static string UserRole { get; set; } = "0";
+        private class UserInfo {
             public static string UserName { get; set; }
             public static string Password { get; set; }
             public static string UserRole { get; set; }
         }
 
+        #region 登录注册
         //账号
         private static string UserName { get; set; }
         //密码
@@ -44,46 +45,44 @@ namespace work_11_15 {
             UserName = userNameIpt.Text;
             Password = passwardIpt.Text;
 
-            // 连接数据库
-            using (MySqlConnection connection = new MySqlConnection(SQLHelper.connstr)) {
-                connection.Open();
+            string query = $"SELECT * FROM account_password WHERE username = '{UserName}' AND password = '{Password}'";
+            UserDataResult result = UserExists(query);
 
-                // 查询数据库中是否存在该用户
-                string query = $"SELECT * FROM account_password WHERE username = '{UserName}' AND password = '{Password}'";
-                using (MySqlCommand command = new MySqlCommand(query, connection)) {
-                    using (MySqlDataReader reader = command.ExecuteReader()) {
-                        if (reader.HasRows && reader.Read()) {
-                            //MessageBox.Show($"用户 {UserName} 登录成功。", "Success");
-                            UserInfo.UserName = UserName;
-                            UserInfo.Password = Password;
-                            UserInfo.UserRole = reader["userRole"].ToString();
+            // 处理查询结果
+            if (result.UserExists) {
+                MessageBox.Show($"用户 {UserName} 登录成功。", "Success");
+                UserInfo.UserName = result.UserData.UserName;
+                UserInfo.Password = result.UserData.Password;
+                UserInfo.UserRole = result.UserData.UserRole;
 
-                            //根据身份不同跳转不同界面
-                            if (UserInfo.UserRole == "0") {
-                                // 学生
-                                BooksPage booksPage = new BooksPage(UserName);
-                                this.Hide();
-                                booksPage.Show();
+                //根据身份不同跳转不同界面
+                if (UserInfo.UserRole == "0") {
+                    // 学生
+                    BooksPage booksPage = new BooksPage(UserName);
+                    this.Hide();
+                    booksPage.Show();
 
-                            } else if (UserInfo.UserRole == "1") {
-                                //管理员
-                                ManagePage managePage = new ManagePage();
-                                this.Hide();
-                                managePage.Show();
-                            }
-                        } else {
-                            MessageBox.Show("账号或密码不正确", "登录失败");
-                        }
-                    }
+                } else if (UserInfo.UserRole == "1") {
+                    //管理员
+                    ManagePage managePage = new ManagePage();
+                    this.Hide();
+                    managePage.Show();
                 }
+            } else {
+                MessageBox.Show("账号或密码不正确", "登录失败");
             }
+
         }
 
         // 注册
         private void registerClick(object sender, EventArgs e) {
             UserName = userNameIpt.Text;
             Password = passwardIpt.Text;
-            if (!UserExists(UserName)) {
+
+            string query = $"SELECT COUNT(*) FROM account_password WHERE username = '{UserName}'";
+            bool IsResult = IsUserExists(query);
+            //判断用户名是否重复
+            if (!IsResult) {
                 if (Password.Length < 6 || Password.Length > 18) {
                     MessageBox.Show("密码长度过长或过短，请重新输入：", "密码格式错误");
                 } else {
@@ -95,19 +94,14 @@ namespace work_11_15 {
                         UserRole = UserInfo.UserRole;
 
                         if (!string.IsNullOrEmpty(UserRole)) {
-                            // 连接数据库
-                            using (MySqlConnection connection = new MySqlConnection(SQLHelper.connstr)) {
-                                connection.Open();
+                            string insertQuery = $"INSERT INTO account_password (username, password, userRole) VALUES ('{UserName}', '{Password}', {(UserRole == "学生" ? "'0'" : "'1'")})";
+                            bool InsertResult = InsertData(insertQuery);
 
-                                // 插入用户信息到数据库
-                                string insertQuery = $"INSERT INTO account_password (username, password, userRole) VALUES ('{UserName}', '{Password}', {(UserRole == "学生" ? "'0'" : "'1'")})";
-
-                                using (MySqlCommand insertCommand = new MySqlCommand(insertQuery, connection)) {
-                                    insertCommand.ExecuteNonQuery();
-                                }
+                            if (InsertResult) {
+                                MessageBox.Show($"账号 {UserName} 注册成功", "Success");
                             }
 
-                            MessageBox.Show($"账号 {UserName} 注册成功", "Success");
+
                         } else {
                             MessageBox.Show($"请选择您要注册的身份！", "提示");
                         }
@@ -118,21 +112,9 @@ namespace work_11_15 {
                 MessageBox.Show($"用户名 {UserName} 已被注册", "账号重复");
             }
         }
+        #endregion
 
-        //判断用户名是否重复
-        private bool UserExists(string username) {
-            using (MySqlConnection connection = new MySqlConnection(SQLHelper.connstr)) {
-                connection.Open();
-
-                string query = $"SELECT COUNT(*) FROM account_password WHERE username = '{username}'";
-                using (MySqlCommand command = new MySqlCommand(query, connection)) {
-                    int count = Convert.ToInt32(command.ExecuteScalar());
-                    return count > 0;
-                }
-            }
-        }
-
-        //设置窗口位置居中屏幕
+        #region 设置窗口位置居中屏幕
         private void CenterFormOnScreen() {
             // 获取主屏幕的大小
             int screenWidth = Screen.PrimaryScreen.Bounds.Width;
@@ -148,9 +130,15 @@ namespace work_11_15 {
             // 设置窗口位置
             this.Location = new Point(x, y);
         }
+        #endregion
+
 
         //窗体初始化
-        private async void formLoad(object sender, EventArgs e) {
+        private async void PageLoad(object sender, EventArgs e) {
+            UserInfo.UserName = string.Empty;
+            UserInfo.Password = string.Empty;
+            UserInfo.UserRole = string.Empty;
+
             await Task.Delay(1);
             userNameIpt.Focus();
             CenterFormOnScreen();

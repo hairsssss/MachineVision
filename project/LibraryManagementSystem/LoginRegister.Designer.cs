@@ -1,4 +1,4 @@
-﻿namespace work_11_15 {
+﻿namespace LibraryManagementSystem {
     partial class LoginRegister {
         /// <summary>
         /// 必需的设计器变量。
@@ -115,7 +115,7 @@
             this.Controls.Add(this.label2);
             this.Name = "LoginRegister";
             this.Text = "图书管理系统";
-            this.Load += new System.EventHandler(this.formLoad);
+            this.Load += new System.EventHandler(this.PageLoad);
             this.ResumeLayout(false);
             this.PerformLayout();
 

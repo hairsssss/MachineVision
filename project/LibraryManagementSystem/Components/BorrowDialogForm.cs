@@ -7,10 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using work_11_15;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.TaskbarClock;
-using static work_11_15.LoginRegister;
 
 namespace LibraryManagementSystem.Components {
     public partial class BorrowDialogForm : Form {

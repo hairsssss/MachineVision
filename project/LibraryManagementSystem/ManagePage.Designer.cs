@@ -38,6 +38,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.bookIpt = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.signOutBtn = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.booksView2)).BeginInit();
@@ -51,10 +52,10 @@
             this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPage2);
             this.tabControl1.Controls.Add(this.tabPage3);
-            this.tabControl1.Location = new System.Drawing.Point(12, 21);
+            this.tabControl1.Location = new System.Drawing.Point(10, 38);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(776, 488);
+            this.tabControl1.Size = new System.Drawing.Size(776, 511);
             this.tabControl1.TabIndex = 0;
             // 
             // tabPage1
@@ -63,7 +64,7 @@
             this.tabPage1.Location = new System.Drawing.Point(4, 25);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(768, 459);
+            this.tabPage1.Size = new System.Drawing.Size(768, 482);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "图书库";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -73,12 +74,12 @@
             this.booksView2.AllowUserToAddRows = false;
             this.booksView2.AllowUserToDeleteRows = false;
             this.booksView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.booksView2.Location = new System.Drawing.Point(21, 17);
+            this.booksView2.Location = new System.Drawing.Point(16, 6);
             this.booksView2.Name = "booksView2";
             this.booksView2.ReadOnly = true;
             this.booksView2.RowHeadersWidth = 51;
             this.booksView2.RowTemplate.Height = 27;
-            this.booksView2.Size = new System.Drawing.Size(731, 410);
+            this.booksView2.Size = new System.Drawing.Size(733, 463);
             this.booksView2.TabIndex = 0;
             // 
             // tabPage2
@@ -87,7 +88,7 @@
             this.tabPage2.Location = new System.Drawing.Point(4, 25);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(768, 459);
+            this.tabPage2.Size = new System.Drawing.Size(768, 488);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "借阅记录";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -118,7 +119,7 @@
             this.tabPage3.Controls.Add(this.label1);
             this.tabPage3.Location = new System.Drawing.Point(4, 25);
             this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Size = new System.Drawing.Size(768, 459);
+            this.tabPage3.Size = new System.Drawing.Size(768, 488);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "新增书籍";
             this.tabPage3.UseVisualStyleBackColor = true;
@@ -198,11 +199,22 @@
             this.label1.TabIndex = 2;
             this.label1.Text = "书名：";
             // 
+            // signOutBtn
+            // 
+            this.signOutBtn.Location = new System.Drawing.Point(683, 12);
+            this.signOutBtn.Name = "signOutBtn";
+            this.signOutBtn.Size = new System.Drawing.Size(99, 48);
+            this.signOutBtn.TabIndex = 4;
+            this.signOutBtn.Text = "退出登录";
+            this.signOutBtn.UseVisualStyleBackColor = true;
+            this.signOutBtn.Click += new System.EventHandler(this.SignOutBtnClick);
+            // 
             // ManagePage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(798, 521);
+            this.ClientSize = new System.Drawing.Size(798, 577);
+            this.Controls.Add(this.signOutBtn);
             this.Controls.Add(this.tabControl1);
             this.Name = "ManagePage";
             this.Text = "ManagePage";
@@ -235,5 +247,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox countIpt;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Button signOutBtn;
     }
 }

@@ -1,5 +1,4 @@
 D:\A_material\MachineVision\project\LibraryManagementSystem\obj\Debug\LibraryManagementSystem.csproj.AssemblyReference.cache
-D:\A_material\MachineVision\project\LibraryManagementSystem\obj\Debug\work_11_15.LoginRegister.resources
 D:\A_material\MachineVision\project\LibraryManagementSystem\obj\Debug\LibraryManagementSystem.Properties.Resources.resources
 D:\A_material\MachineVision\project\LibraryManagementSystem\obj\Debug\LibraryManagementSystem.csproj.GenerateResource.cache
 D:\A_material\MachineVision\project\LibraryManagementSystem\obj\Debug\LibraryManagementSystem.csproj.CoreCompileInputs.cache
@@ -15,3 +14,4 @@ D:\A_material\MachineVision\project\LibraryManagementSystem\obj\Debug\LibraryMan
 D:\A_material\MachineVision\project\LibraryManagementSystem\obj\Debug\LibraryManagementSystem.Components.BorrowDialogForm.resources
 D:\A_material\MachineVision\project\LibraryManagementSystem\obj\Debug\LibraryManagementSystem.Components.ChooseIdentityForm.resources
 D:\A_material\MachineVision\project\LibraryManagementSystem\obj\Debug\LibraryManagementSystem.ManagePage.resources
+D:\A_material\MachineVision\project\LibraryManagementSystem\obj\Debug\LibraryManagementSystem.LoginRegister.resources
