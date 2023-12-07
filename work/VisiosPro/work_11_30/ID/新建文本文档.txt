@@ -1,0 +1,1 @@
+1.PART NO 调整前景阈值 字符间隙 MainLine 忽略边框不选
