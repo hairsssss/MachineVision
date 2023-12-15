@@ -1,0 +1,3 @@
+PMAlign匹配外矩形框
+fixtrue定位
+PMAlign匹配标点

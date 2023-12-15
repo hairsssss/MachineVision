@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<hdevelop file_version="1.2" halcon_version="22.05.0.0">
+<procedure name="main">
+<interface/>
+<body>
+<c>** 读取图像</c>
+<l>read_image (Image1, 'printer_chip/printer_chip_01')</l>
+<c></c>
+<c>** 获取当前窗口句柄</c>
+<l>dev_get_window (WindowHandle)</l>
+<c></c>
+<c>** 绘制ROI</c>
+<l>draw_rectangle2 (WindowHandle, Row, Column, Phi, Length1, Length2)</l>
+<c></c>
+<c>**生成一个带方向的矩形</c>
+</body>
+<docu id="main">
+<parameters/>
+</docu>
+</procedure>
+</hdevelop>

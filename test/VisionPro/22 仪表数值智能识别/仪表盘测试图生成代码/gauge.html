@@ -1,0 +1,83 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ECharts仪表盘实例代码</title>
+<meta name="keywords" content="echart,图表" />
+<meta name="description" content="演示XHTML、CSS、jquery、PHP案例和示例" />
+<link rel="stylesheet" type="text/css" href="http://www.jb51.net/demo/css/main.css" />
+<style type="text/css">
+.demo{width:80%;margin:50px auto 10px auto;padding:10px;}
+@media (max-width: 480px){
+	.demo{width:360px;margin:50px auto 10px auto;padding:10px;}
+}
+
+</style>
+</head>
+
+<body> 
+
+<div id="main"> 
+   
+   <div class="demo">
+		<div id="myChart" style="width:100%;height:500px;"></div>
+		
+	</div>
+</div>
+<script type="text/javascript" src="js/echarts.min.js"></script>
+<script type="text/javascript">
+// 基于准备好的dom，初始化echarts实例
+var myChart = echarts.init(document.getElementById('myChart'));
+
+option = {
+    tooltip : {
+        formatter: "{a} <br/>{b} : {c}%"
+    },
+    toolbox: {show: 1, x: 'center', y: 'bottom', feature: {saveAsImage: {show: false, title: '保存截图', type: 'png'}}},
+    series : [
+        { 
+            name:'业务指标',
+            type:'gauge',
+            radius : 200,
+            
+            detail : {formatter:'{value}%'}, //仪表盘显示数据
+			axisLine: { //仪表盘轴线样式  仪表盘颜色调整
+				lineStyle: {
+					width: 20,
+					color:[[0, '#000'],[1, '#000']] 
+				}
+			},
+			 axisLabel: {            // 坐标轴小标记
+                textStyle: {       // 属性lineStyle控制线条样式
+                    fontWeight: 'bolder',
+                    fontSize : 16,
+                    color: '#000'
+                }
+           }, 
+			
+			splitLine: { //分割线样式
+				length: 20
+			},
+            data:[{value: 90, name: '能耗'}]
+        }
+    ]
+};
+
+/*
+clearInterval(timeTicket);
+var timeTicket = setInterval(function () {
+    option.series[0].data[0].value = (Math.random() * 100).toFixed(2) - 0;
+    myChart.setOption(option, true);
+},2000);
+*/
+
+// 使用刚指定的配置项和数据显示图表。
+myChart.setOption(option);
+</script>
+
+<div id="footer">
+</div>
+</body>
+</html>
