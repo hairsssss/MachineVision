@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31424.327
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "服务器", "服务器\服务器.csproj", "{75B3E455-79A1-4B66-B91B-FD9FE43DF4BC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "客户端", "客户端\客户端.csproj", "{649EB640-7A76-424C-BAF5-24AF4EB05AA5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{75B3E455-79A1-4B66-B91B-FD9FE43DF4BC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{75B3E455-79A1-4B66-B91B-FD9FE43DF4BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{75B3E455-79A1-4B66-B91B-FD9FE43DF4BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{75B3E455-79A1-4B66-B91B-FD9FE43DF4BC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{649EB640-7A76-424C-BAF5-24AF4EB05AA5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{649EB640-7A76-424C-BAF5-24AF4EB05AA5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{649EB640-7A76-424C-BAF5-24AF4EB05AA5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{649EB640-7A76-424C-BAF5-24AF4EB05AA5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F3EA3A63-63D8-485D-8ED8-09B3D00B4433}
+	EndGlobalSection
+EndGlobal
