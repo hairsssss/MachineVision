@@ -1,0 +1,9 @@
+红线 12V电源线
+硬触发
+短焦距 视角大  拍摄范围大
+长焦距 视角下  拍摄范围小
+https://www.keyence.com.cn/landing/gen/vision_salon_07.jsp 光源
+https://www.keyence.com.cn/landing/gen/vision_salon_09.jsp 相机
+https://www.keyence.com.cn/landing/gen/vision_salon_08.jsp 镜头
+https://blog.csdn.net/L_Y_Fei/article/details/107685978?ydreferer=aHR0cHM6Ly9jbi5iaW5nLmNvbS8%3D 快门
+https://www.jialiauto.com/productinfo/673201.html 嘉利光源
