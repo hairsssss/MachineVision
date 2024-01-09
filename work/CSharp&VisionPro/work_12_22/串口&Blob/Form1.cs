@@ -6,7 +6,11 @@ using System.Drawing;
 using System.IO;
 using System.IO.Ports;
 using System.Linq;
+using System.Net;
+using System.Net.Sockets;
 using System.Text;
+using System.Text.RegularExpressions;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Cognex.VisionPro;
@@ -19,6 +23,8 @@ namespace 串口_Blob {
         public Form1() {
             InitializeComponent();
         }
+
+        #region 窗口 相机
         //相机对象
         ICogFrameGrabber frameGrabber = null;
 
@@ -112,7 +118,9 @@ namespace 串口_Blob {
             LoadVpp();
             InitCam();
             //打开串口
-            serialPort1.Open();
+            //serialPort1.Open();
+
+            SocketConnect();
         }
 
         private void takePhotoBtn_Click(object sender, EventArgs e) {
@@ -122,43 +130,94 @@ namespace 串口_Blob {
 
         //串口连接
         private void serialPort_DataReceived(object sender, SerialDataReceivedEventArgs e) {
-            //接收缓冲区数据的字节数
-            int size = serialPort1.BytesToRead;
-            //动态创建数组接收数据
-            byte[] buffer = new byte[size];
-            //读取数据
-            serialPort1.Read(buffer, 0, buffer.Length);
-            //字节数组转化字符串
-            string msg = Encoding.Default.GetString(buffer);
-            if (msg == "T1") {
-                fifo.StartAcquire();
-            }
+            /*    //接收缓冲区数据的字节数
+                int size = serialPort1.BytesToRead;
+                //动态创建数组接收数据
+                byte[] buffer = new byte[size];
+                //读取数据
+                serialPort1.Read(buffer, 0, buffer.Length);
+                //字节数组转化字符串
+                string msg = Encoding.Default.GetString(buffer);
+                if (msg == "T1") {
+                    fifo.StartAcquire();
+                }*/
         }
 
+        //窗口关闭
         private void Form1_FormClosing(object sender, FormClosingEventArgs e) {
             //关闭串口
-            if (serialPort1 != null && serialPort1.IsOpen)
-                serialPort1.Close();
+            //if (serialPort1 != null && serialPort1.IsOpen)
+            //serialPort1.Close();
+
+
+            try {
+                // 关闭socketConnect
+                if (ClientSocket != null && ClientSocket.Connected) {
+                    ClientSocket.Shutdown(SocketShutdown.Both);
+                    ClientSocket.Close();
+                }
+
+                // 关闭serverListenSocket
+                if (ClientSocket != null && ClientSocket.Connected) {
+                    ClientSocket.Close();
+                }
+            } catch (Exception ex) {
+                MessageBox.Show("断开连接时发生错误：" + ex.Message);
+            }
+
         }
 
         //提交结果信息
         private void submitBtn_click(object sender, EventArgs e) {
-            int resultStr = cogBlobEditV21.Subject.Results.GetBlobs().Count;
+            string resultStr = cogBlobEditV21.Subject.Results.GetBlobs().Count + "个斑点";
 
-            //byte[] send = Encoding.UTF8.GetBytes(resultStr.ToString() + "个");
-            //serialPort1.Write(send, 0, send.Length);
 
-            string testStr = "9个斑点";
-
-            // 使用 UTF-8 编码将字符串转换为字节数组
-            byte[] bytes = Encoding.UTF8.GetBytes(testStr);
-
-            // 将字节数组写入串口
-            serialPort1.Write(bytes, 0, bytes.Length);
-
-            // 添加延迟
-            System.Threading.Thread.Sleep(100); // 100 毫秒的延迟，根据实际情况调整
+            //服务器未勾选16进制格式
+            byte[] send = Encoding.Default.GetBytes(resultStr);
+            ClientSocket.Send(send);
 
         }
+
+        #endregion
+
+        #region 连接服务器 接收数据
+        // 声明负责通信的socket
+        private Socket ClientSocket;
+
+        //连接服务器
+        private void SocketConnect() {
+            //1.创建用于监听的套接字
+            ClientSocket = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
+
+            //2.绑定IP和Port
+            IPEndPoint iPEndPoint = new IPEndPoint(IPAddress.Parse("169.254.227.150"), 60000);
+
+            //3.向服务器发出连接请求
+            ClientSocket.Connect(iPEndPoint);
+
+            //开启分线程接收服务器消息
+            Thread thread = new Thread(() => {
+                while (true) {
+                    //4.接收数据
+                    byte[] receive = new byte[1024];
+                    int len = ClientSocket.Receive(receive);  //调用Receive()接收字节数据
+                    if (len == 0) {
+                        break;
+                    }
+                    //6. 接收信息后在主线程刷新UI
+                    string str = Encoding.ASCII.GetString(receive, 0, len);
+                    this.BeginInvoke(new Action<String>(s => {
+
+                        if (s == "T1") {
+                            fifo.StartAcquire();
+                        }
+
+                    }), str);
+                }
+
+            });
+            thread.Start();
+        }
+        #endregion
     }
 }
